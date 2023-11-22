@@ -1,3 +1,4 @@
 #include <iostream>
-int main() { std::cout << std::endl << "Hello professor!";
+int main() { 
+	std::cout << std::endl << "Hello, professor!";
 }
