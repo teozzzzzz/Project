@@ -22,6 +22,17 @@ public:
     Event(std::string name, std::string date, std::string time, EventLocation location)
         : name(name), date(date), time(time), location(location) {}
 };
+class Ticket {
+private:
+    std::string id;
+    std::string type;
+    Event event;
+
+public:
+    Ticket(const std::string& type, const Event& event) : type(type), event(event) {
+        generateUniqueID();
+    }
+
 
 int main() { 
 	std::cout << std::endl << "Hello, professor!";
